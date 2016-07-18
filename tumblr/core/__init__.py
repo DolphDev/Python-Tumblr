@@ -6,4 +6,5 @@ class TumblrAPI(object):
     def __init__(self, oauth2stuff):
         session = oauth2stuff
 
-    def post(**url, **kwargs)
+    def post(**url, **kwargs):
+        pass
