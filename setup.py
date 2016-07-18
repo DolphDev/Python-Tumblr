@@ -32,13 +32,13 @@ SOFTWARE.
 """
 
 from setuptools import setup
-setup(name='ezurl',
+setup(name='tumblr',
       version="0.1.3.25",
       description='Tumblr API for python',
       author='Joshua Walters',
       author_email='therealdolphman@gmail.com',
       url='https://github.com/Dolphman/Python-Tumblr',
-      packages=['ezurl'],
+      packages=['oauthsetup', 'tumblr', "tumblr.core"],
       keywords=['URL Generation', 'Python URL generation', 'Python URL'],
       classifiers=["License :: OSI Approved :: MIT License",
                    "Operating System :: OS Independent",
@@ -51,5 +51,7 @@ setup(name='ezurl',
                    "Programming Language :: Python :: 3.3",
                    "Programming Language :: Python :: 3.4",
                    "Programming Language :: Python :: 3.5"],
-      license="MIT"
+      license="MIT",
+      entry_points={
+          'console_scripts': 'tumblr=oauthsetup:setup_oauth'}
       )

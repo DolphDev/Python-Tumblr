@@ -10,4 +10,4 @@ install:
   - pip install pytest
 # command to run tests
 script:
-  py.test tests --pep8
+  py.test tests
